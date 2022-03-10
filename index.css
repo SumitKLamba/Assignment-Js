@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    height: 8vh;
+    background-color: orange;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.header ul {
+    display: flex;
+    height: 8vh;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    border: 0ch;
+    background-color: transparent;
+    color: white;
+}
+
+.sections ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h2 {
+  background-color: white;
+  padding-top: 1em;
+  padding-left: 1.5em;
+  padding-bottom: 0;
+  margin: 0;
+  font-size: 1.5rem;
+}
