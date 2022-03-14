@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <title>Assignment 1</title>
-    <script src="./onButtonClick.js"></script>
-    <link rel="stylesheet" href="./index.css">
-    <body>
-        <div class="App">
-            <div id="header">
-                <header>
-                    <ul>
-                      <li><button onclick="onButtonClick('Trending')">Trending</button></li>
-                      <li><button onclick="onButtonClick('Most Popular')">Most Popular</button></li>
-                      <li><button onclick="onButtonClick('Most Viewed')">Most Viewed</button></li>
-                      <li><button onclick="onButtonClick('Your Choice')">Your Choice</button></li>
-                    </ul>
-                  </header>
-            </div>
-            <div id="main">
-                <div id="sectionsTemplate" class="sections">
-                    <h2 id="title">Title</h2>
-                    <div id="blogsTemplate">
-                        <div id="card" class="card">
-                            <img className="blog-img" src="https://media.istockphoto.com/photos/bloggingblog-concepts-ideas-with-worktable-picture-id922745190?k=20&m=922745190&s=612x612&w=0&h=TqsA7NeMPYXmK1TY5dsbdIsczaUK0OgguehHWdSUqL8=" alt="Blog Image"/>
-                            <div className="text-overlay">
-                                <h3>What is Lorem Ipsum?</h3>
-                                <div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <title>Assignment 1</title>
+  <link rel="stylesheet" href="./index.css" />
+  <body>
+    <div class="App">
+      <div class="header">
+        <header>
+          <ul>
+            <li>
+              <button id="buttonTrending" onclick="onButtonClick('Trending')">Trending</button>
+            </li>
+            <li>
+              <button id="buttonMostPopular" onclick="onButtonClick('Most Popular')">
+                Most Popular
+              </button>
+            </li>
+            <li>
+              <button id="buttonMostViewed" onclick="onButtonClick('Most Viewed')">
+                Most Viewed
+              </button>
+            </li>
+            <li>
+              <button id="buttonYourChoice" onclick="onButtonClick('Your Choice')">
+                Your Choice
+              </button>
+            </li>
+          </ul>
+        </header>
+      </div>
+      <div id="main">
+        <div id="sectionsTemplate" class="sections">
+          <h2 id="title">Title</h2>
+            <div id="blogsTemplate" class="blogList">
+              <div id="card" class="card">
+                <img
+                  className="blog-img"
+                  src="https://media.istockphoto.com/photos/bloggingblog-concepts-ideas-with-worktable-picture-id922745190?k=20&m=922745190&s=612x612&w=0&h=TqsA7NeMPYXmK1TY5dsbdIsczaUK0OgguehHWdSUqL8="
+                  alt="Blog Image"
+                />
+                <div class="text-overlay">
+                  <h3>What is Lorem Ipsum?</h3>
+                  <div>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                  </div>
+                  <div class="read-more">
+                    <a href="https://www.lipsum.com/">
+                      Read more...
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
+          </ul>
         </div>
-        <script type="text/javascript" src="./index.js" defer></script>
-    </body>
+      </div>
+    </div>
+    <script type="text/javascript" src="./index.js" defer></script>
+    <script type="text/javascript" src="./onScroll.js" defer></script>
+    <script type="text/javascript" src="./onButtonClick.js" defer></script>
+  </body>
 </html>
