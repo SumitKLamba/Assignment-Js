@@ -25,7 +25,7 @@ const scrollFunction = () => {
       document.getElementById("buttonMostPopular").style.color = "white";
       document.getElementById("buttonMostViewed").style.color = "black";
       document.getElementById("buttonYourChoice").style.color = "white";
-    } else if (this.scrollY > trendingHeight + popularHeight + viewedHeight) {
+    } else if (this.scrollY > trendingHeight + popularHeight + viewedHeight - 1) {
       document.getElementById("buttonTrending").style.color = "white";
       document.getElementById("buttonMostPopular").style.color = "white";
       document.getElementById("buttonMostViewed").style.color = "white";
