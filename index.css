@@ -5,6 +5,10 @@
   text-align: left;
 }
 
+body {
+  background-color: #EFFFFD;
+}
+
 .header {
   background-color: #42c2ff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -24,16 +28,18 @@
   justify-content: space-around;
 }
 
-@media screen and (max-width: 992px) {
-  li {
-    display: block;
-  }
+/* to make buttons in 2-2 format for devices with width less 992px*/
+@media screen 
+  and (max-width: 992px) {
+    li {
+      display: block;
+    }
 
-  .header ul {
-    display: grid;
-    text-align: center;
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .header ul {
+      display: grid;
+      text-align: center;
+      grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .header button {
@@ -49,8 +55,13 @@
   border: 2px;
   background-color: transparent;
   color: #85f4ff;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: large;
+}
+
+/* so that the Trending button comes in black before we do any scrolling */
+#buttonTrending {
+  color: black;
 }
 
 .sections h2 {
@@ -67,6 +78,15 @@
   flex-wrap: wrap;
 }
 
+/* to show only 1 blog in a row for mobile devices */
+@media screen 
+  and (max-width: 767px) {
+    .blogList {
+      flex: 1;
+      flex-direction: column;
+    }
+}
+
 .card {
   border-radius: 12px;
   overflow: hidden;
@@ -78,6 +98,23 @@
   margin-top: 20px;
   margin-bottom: 20px;
   width: 30vw;
+}
+
+/* to show 2 blogs in a row for tablets */
+@media screen 
+  and (min-width: 768px) 
+  and (max-width: 992px) {
+    .card {
+      width: 45vw;
+    }
+}
+
+/* for mobile expanding the single card in row to 90% of screen size */
+@media screen 
+  and (max-width: 767px) {
+    .card {
+      width: 90vw;
+    }
 }
 
 .text-overlay {

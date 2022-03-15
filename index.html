@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <title>Assignment 1</title>
+  <title>Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./index.css" />
   <body>
     <div class="App">
@@ -8,7 +9,9 @@
         <header>
           <ul>
             <li>
-              <button id="buttonTrending" onclick="onButtonClick('Trending')">Trending</button>
+              <button id="buttonTrending" onclick="onButtonClick('Trending')">
+                Trending
+              </button>
             </li>
             <li>
               <button id="buttonMostPopular" onclick="onButtonClick('Most Popular')">
@@ -29,17 +32,24 @@
         </header>
       </div>
       <div id="main">
+        <!-- Sections Template with Title and the Blogs Template-->
+        <!-- The template to html code conversion can be accessed in the file js/index.js -->
         <div id="sectionsTemplate" class="sections">
+          <!--Title of the sections-->
           <h2 id="title">Title</h2>
+             <!-- Blogs Template or card template with image, heading, and description and read more button-->
             <div id="blogsTemplate" class="blogList">
               <div id="card" class="card">
+                <!--Image for the cards-->
                 <img
                   className="blog-img"
                   src="https://media.istockphoto.com/photos/bloggingblog-concepts-ideas-with-worktable-picture-id922745190?k=20&m=922745190&s=612x612&w=0&h=TqsA7NeMPYXmK1TY5dsbdIsczaUK0OgguehHWdSUqL8="
                   alt="Blog Image"
                 />
                 <div class="text-overlay">
+                  <!--Heading of the Card-->
                   <h3>What is Lorem Ipsum?</h3>
+                  <!--Description of the Card-->
                   <div>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and
@@ -49,6 +59,7 @@
                       type specimen book.
                     </p>
                   </div>
+                  <!--Read More Button-->
                   <div class="read-more">
                     <a href="https://www.lipsum.com/">
                       Read more...
@@ -61,8 +72,11 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="./index.js" defer></script>
-    <script type="text/javascript" src="./onScroll.js" defer></script>
-    <script type="text/javascript" src="./onButtonClick.js" defer></script>
+    <!--for template to html conversion-->
+    <script type="text/javascript" src="./js/index.js" defer></script>
+    <!--for changing the color of header button texts on scrolling to a section-->
+    <script type="text/javascript" src="./js/onScroll.js" defer></script>
+    <!--for scrolling to the section on button click-->
+    <script type="text/javascript" src="./js/onButtonClick.js" defer></script>
   </body>
 </html>
